@@ -1,0 +1,36 @@
+[1] "Logistic"
+`summarise()` has grouped output by 'nTrials', 'Alpha', 'participant_id'. You
+can override using the `.groups` argument.
+`summarise()` has grouped output by 's'. You can override using the `.groups`
+argument.
+Running MCMC with 4 parallel chains...
+
+Chain 1 Rejecting initial value:
+Chain 1   Gradient evaluated at the initial value is not finite.
+Chain 1   Stan can't start sampling from this initial value.
+Chain 1 Iteration:    1 / 4000 [  0%]  (Warmup) 
+Chain 1 Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain 1 Exception: normal_lpdf: Scale parameter is 0, but must be positive! (in '/tmp/RtmpxA9CDj/model-37f0297df8959a.stan', line 68, column 2 to column 49)
+Chain 1 If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain 1 but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain 1 
+Chain 2 Iteration:    1 / 4000 [  0%]  (Warmup) 
+Chain 3 Iteration:    1 / 4000 [  0%]  (Warmup) 
+Chain 4 Rejecting initial value:
+Chain 4   Gradient evaluated at the initial value is not finite.
+Chain 4   Stan can't start sampling from this initial value.
+Chain 4 Iteration:    1 / 4000 [  0%]  (Warmup) 
+Chain 4 Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain 4 Exception: normal_lpdf: Scale parameter is 0, but must be positive! (in '/tmp/RtmpxA9CDj/model-37f0297df8959a.stan', line 68, column 2 to column 49)
+Chain 4 If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain 4 but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain 4 
+Chain 3 Iteration:  100 / 4000 [  2%]  (Warmup) 
+Chain 4 Iteration:  100 / 4000 [  2%]  (Warmup) 
+Chain 3 Iteration:  200 / 4000 [  5%]  (Warmup) 
+Chain 3 Iteration:  300 / 4000 [  7%]  (Warmup) 
+Chain 3 Iteration:  400 / 4000 [ 10%]  (Warmup) 
+Chain 2 Iteration:  100 / 4000 [  2%]  (Warmup) 
+Chain 3 Iteration:  500 / 4000 [ 12%]  (Warmup) 
+Chain 3 Iteration:  600 / 4000 [ 15%]  (Warmup) 
+Chain 3 Iteration:  700 / 4000 [ 17%]  (Warmup) 

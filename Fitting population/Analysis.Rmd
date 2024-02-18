@@ -1,0 +1,57 @@
+---
+title: "Analysis"
+output: html_document
+date: "`r Sys.Date()`"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+pacman::p_load(cmdstanr, tidyverse,posterior, bayesplot, tidybayes, furrr,reticulate, stringr, patchwork)
+
+```
+
+
+# Model comparison on models with priors
+```{r}
+files = list.files(here::here("Fitting population","Saved models","Priors"))
+
+files = files[!grepl("rt", files)]
+
+for (i in files){
+  print(i)
+  ii = substr(i, 1, nchar(i) - 4)
+  print(ii)
+
+  assign(ii, readRDS(here::here("Fitting population","Saved models","Priors",i)))
+}
+
+loo::loo_compare(list(Gumbel = Gumbel$loo(),
+                      Normal = Normal$loo(),
+                      Weibull = Weibull$loo(),
+                      Hyperbolic = Hyperbolic$loo(),
+                      Logistic = Logistic$loo()
+                      ))
+```
+
+# Model comparison on models without priors
+```{r}
+#files = list.files(here::here("Fitting population","saved models","priors"))
+files = list.files(here::here("Fitting population","Saved models","Nopriors"))
+
+files = files[!grepl("rt", files)]
+
+for (i in files){
+  print(i)
+  ii = substr(i, 1, nchar(i) - 4)
+  print(ii)
+
+  assign(ii, readRDS(here::here("Fitting population","Saved models","nopriors",i)))
+}
+
+loo::loo_compare(list(Gumbel = Gumbel$loo(),
+                      Normal = Normal$loo(),
+                      Weibull = Weibull$loo(),
+                      Hyperbolic = Hyperbolic$loo(),
+                      Logistic = Logistic$loo()
+                      ))
+```

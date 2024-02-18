@@ -1,0 +1,585 @@
+[1] "runnning"
+[1] "runnning"
+[1] "both"
+[1] 10
+[1] 50
+[1] 0
+[1] 0
+[1] 1
+[1] "done finding parameter values"
+/home/jespere/Hierarchical-Interoception/Power analysis/Python scripts/PSI.py:58: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  df = pd.concat([df, df1])
+sys:1: FutureWarning: Index.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+Running MCMC with 4 parallel chains...
+
+Chain 1 Iteration:    1 / 4000 [  0%]  (Warmup) 
+Chain 1 Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain 1 Exception: lkj_corr_cholesky_lpdf: Random variable[2] is 0, but must be positive! (in '/tmp/RtmpeOUyLC/model-37f96d1c6663bc.stan', line 120, column 2 to column 29)
+Chain 1 If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain 1 but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain 1 
+Chain 1 Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain 1 Exception: lkj_corr_cholesky_lpdf: Random variable[2] is 0, but must be positive! (in '/tmp/RtmpeOUyLC/model-37f96d1c6663bc.stan', line 120, column 2 to column 29)
+Chain 1 If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain 1 but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain 1 
+Chain 2 Iteration:    1 / 4000 [  0%]  (Warmup) 
+Chain 2 Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain 2 Exception: lkj_corr_cholesky_lpdf: Random variable[4] is 0, but must be positive! (in '/tmp/RtmpeOUyLC/model-37f96d1c6663bc.stan', line 120, column 2 to column 29)
+Chain 2 If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain 2 but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain 2 
+Chain 2 Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain 2 Exception: lkj_corr_cholesky_lpdf: Random variable[4] is 0, but must be positive! (in '/tmp/RtmpeOUyLC/model-37f96d1c6663bc.stan', line 120, column 2 to column 29)
+Chain 2 If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain 2 but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain 2 
+Chain 2 Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain 2 Exception: lkj_corr_cholesky_lpdf: Random variable[4] is 0, but must be positive! (in '/tmp/RtmpeOUyLC/model-37f96d1c6663bc.stan', line 120, column 2 to column 29)
+Chain 2 If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain 2 but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain 2 
+Chain 2 Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain 2 Exception: lkj_corr_cholesky_lpdf: Random variable[2] is 0, but must be positive! (in '/tmp/RtmpeOUyLC/model-37f96d1c6663bc.stan', line 120, column 2 to column 29)
+Chain 2 If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain 2 but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain 2 
+Chain 2 Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain 2 Exception: lkj_corr_cholesky_lpdf: Random variable[2] is 0, but must be positive! (in '/tmp/RtmpeOUyLC/model-37f96d1c6663bc.stan', line 120, column 2 to column 29)
+Chain 2 If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain 2 but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain 2 
+Chain 3 Iteration:    1 / 4000 [  0%]  (Warmup) 
+Chain 3 Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain 3 Exception: lkj_corr_cholesky_lpdf: Random variable[5] is 0, but must be positive! (in '/tmp/RtmpeOUyLC/model-37f96d1c6663bc.stan', line 120, column 2 to column 29)
+Chain 3 If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain 3 but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain 3 
+Chain 3 Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain 3 Exception: lkj_corr_cholesky_lpdf: Random variable[5] is 0, but must be positive! (in '/tmp/RtmpeOUyLC/model-37f96d1c6663bc.stan', line 120, column 2 to column 29)
+Chain 3 If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain 3 but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain 3 
+Chain 3 Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain 3 Exception: Within_subjectx32design_model_namespace::log_prob: betas[1] is -nan, but must be greater than or equal to 0.000000 (in '/tmp/RtmpeOUyLC/model-37f96d1c6663bc.stan', line 53, column 2 to column 29)
+Chain 3 If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain 3 but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain 3 
+Chain 3 Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain 3 Exception: lkj_corr_cholesky_lpdf: Random variable[3] is 0, but must be positive! (in '/tmp/RtmpeOUyLC/model-37f96d1c6663bc.stan', line 120, column 2 to column 29)
+Chain 3 If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain 3 but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain 3 
+Chain 4 Iteration:    1 / 4000 [  0%]  (Warmup) 
+Chain 4 Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain 4 Exception: lkj_corr_cholesky_lpdf: Random variable[6] is 0, but must be positive! (in '/tmp/RtmpeOUyLC/model-37f96d1c6663bc.stan', line 120, column 2 to column 29)
+Chain 4 If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain 4 but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain 4 
+Chain 4 Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain 4 Exception: lkj_corr_cholesky_lpdf: Random variable[6] is 0, but must be positive! (in '/tmp/RtmpeOUyLC/model-37f96d1c6663bc.stan', line 120, column 2 to column 29)
+Chain 4 If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain 4 but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain 4 
+Chain 4 Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain 4 Exception: lkj_corr_cholesky_lpdf: Random variable[6] is 0, but must be positive! (in '/tmp/RtmpeOUyLC/model-37f96d1c6663bc.stan', line 120, column 2 to column 29)
+Chain 4 If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain 4 but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain 4 
+Chain 4 Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain 4 Exception: Within_subjectx32design_model_namespace::log_prob: lapses[1] is nan, but must be greater than or equal to 0.000000 (in '/tmp/RtmpeOUyLC/model-37f96d1c6663bc.stan', line 54, column 2 to column 43)
+Chain 4 If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain 4 but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain 4 
+Chain 4 Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain 4 Exception: lkj_corr_cholesky_lpdf: Random variable[3] is 0, but must be positive! (in '/tmp/RtmpeOUyLC/model-37f96d1c6663bc.stan', line 120, column 2 to column 29)
+Chain 4 If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain 4 but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain 4 
+Chain 3 Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain 3 Exception: lkj_corr_cholesky_lpdf: Random variable[6] is 0, but must be positive! (in '/tmp/RtmpeOUyLC/model-37f96d1c6663bc.stan', line 120, column 2 to column 29)
+Chain 3 If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain 3 but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain 3 
+Chain 1 Iteration:  100 / 4000 [  2%]  (Warmup) 
+Chain 3 Iteration:  100 / 4000 [  2%]  (Warmup) 
+Chain 2 Iteration:  100 / 4000 [  2%]  (Warmup) 
+Chain 1 Iteration:  200 / 4000 [  5%]  (Warmup) 
+Chain 3 Iteration:  200 / 4000 [  5%]  (Warmup) 
+Chain 2 Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain 2 Exception: lkj_corr_cholesky_lpdf: Random variable[6] is 0, but must be positive! (in '/tmp/RtmpeOUyLC/model-37f96d1c6663bc.stan', line 120, column 2 to column 29)
+Chain 2 If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain 2 but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain 2 
+Chain 1 Iteration:  300 / 4000 [  7%]  (Warmup) 
+Chain 2 Iteration:  200 / 4000 [  5%]  (Warmup) 
+Chain 3 Iteration:  300 / 4000 [  7%]  (Warmup) 
+Chain 1 Iteration:  400 / 4000 [ 10%]  (Warmup) 
+Chain 2 Iteration:  300 / 4000 [  7%]  (Warmup) 
+Chain 3 Iteration:  400 / 4000 [ 10%]  (Warmup) 
+Chain 1 Iteration:  500 / 4000 [ 12%]  (Warmup) 
+Chain 2 Iteration:  400 / 4000 [ 10%]  (Warmup) 
+Chain 3 Iteration:  500 / 4000 [ 12%]  (Warmup) 
+Chain 1 Iteration:  600 / 4000 [ 15%]  (Warmup) 
+Chain 2 Iteration:  500 / 4000 [ 12%]  (Warmup) 
+Chain 3 Iteration:  600 / 4000 [ 15%]  (Warmup) 
+Chain 1 Iteration:  700 / 4000 [ 17%]  (Warmup) 
+Chain 2 Iteration:  600 / 4000 [ 15%]  (Warmup) 
+Chain 3 Iteration:  700 / 4000 [ 17%]  (Warmup) 
+Chain 2 Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain 2 Exception: lkj_corr_cholesky_lpdf: Random variable[6] is 0, but must be positive! (in '/tmp/RtmpeOUyLC/model-37f96d1c6663bc.stan', line 120, column 2 to column 29)
+Chain 2 If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain 2 but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain 2 
+Chain 1 Iteration:  800 / 4000 [ 20%]  (Warmup) 
+Chain 2 Iteration:  700 / 4000 [ 17%]  (Warmup) 
+Chain 2 Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain 2 Exception: lkj_corr_cholesky_lpdf: Random variable[6] is 0, but must be positive! (in '/tmp/RtmpeOUyLC/model-37f96d1c6663bc.stan', line 120, column 2 to column 29)
+Chain 2 If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain 2 but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain 2 
+Chain 3 Iteration:  800 / 4000 [ 20%]  (Warmup) 
+Chain 2 Iteration:  800 / 4000 [ 20%]  (Warmup) 
+Chain 1 Iteration:  900 / 4000 [ 22%]  (Warmup) 
+Chain 3 Iteration:  900 / 4000 [ 22%]  (Warmup) 
+Chain 2 Iteration:  900 / 4000 [ 22%]  (Warmup) 
+Chain 1 Iteration: 1000 / 4000 [ 25%]  (Warmup) 
+Chain 3 Iteration: 1000 / 4000 [ 25%]  (Warmup) 
+Chain 2 Iteration: 1000 / 4000 [ 25%]  (Warmup) 
+Chain 1 Iteration: 1100 / 4000 [ 27%]  (Warmup) 
+Chain 1 Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain 1 Exception: lkj_corr_cholesky_lpdf: Random variable[6] is 0, but must be positive! (in '/tmp/RtmpeOUyLC/model-37f96d1c6663bc.stan', line 120, column 2 to column 29)
+Chain 1 If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain 1 but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain 1 
+Chain 3 Iteration: 1100 / 4000 [ 27%]  (Warmup) 
+Chain 2 Iteration: 1100 / 4000 [ 27%]  (Warmup) 
+Chain 1 Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain 1 Exception: lkj_corr_cholesky_lpdf: Random variable[6] is 0, but must be positive! (in '/tmp/RtmpeOUyLC/model-37f96d1c6663bc.stan', line 120, column 2 to column 29)
+Chain 1 If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain 1 but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain 1 
+Chain 1 Iteration: 1200 / 4000 [ 30%]  (Warmup) 
+Chain 2 Iteration: 1200 / 4000 [ 30%]  (Warmup) 
+Chain 3 Iteration: 1200 / 4000 [ 30%]  (Warmup) 
+Chain 1 Iteration: 1300 / 4000 [ 32%]  (Warmup) 
+Chain 2 Iteration: 1300 / 4000 [ 32%]  (Warmup) 
+Chain 3 Iteration: 1300 / 4000 [ 32%]  (Warmup) 
+Chain 3 Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain 3 Exception: lkj_corr_cholesky_lpdf: Random variable[6] is 0, but must be positive! (in '/tmp/RtmpeOUyLC/model-37f96d1c6663bc.stan', line 120, column 2 to column 29)
+Chain 3 If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain 3 but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain 3 
+Chain 1 Iteration: 1400 / 4000 [ 35%]  (Warmup) 
+Chain 2 Iteration: 1400 / 4000 [ 35%]  (Warmup) 
+Chain 3 Iteration: 1400 / 4000 [ 35%]  (Warmup) 
+Chain 1 Iteration: 1500 / 4000 [ 37%]  (Warmup) 
+Chain 2 Iteration: 1500 / 4000 [ 37%]  (Warmup) 
+Chain 3 Iteration: 1500 / 4000 [ 37%]  (Warmup) 
+Chain 1 Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain 1 Exception: lkj_corr_cholesky_lpdf: Random variable[6] is 0, but must be positive! (in '/tmp/RtmpeOUyLC/model-37f96d1c6663bc.stan', line 120, column 2 to column 29)
+Chain 1 If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain 1 but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain 1 
+Chain 1 Iteration: 1600 / 4000 [ 40%]  (Warmup) 
+Chain 2 Iteration: 1600 / 4000 [ 40%]  (Warmup) 
+Chain 3 Iteration: 1600 / 4000 [ 40%]  (Warmup) 
+Chain 2 Iteration: 1700 / 4000 [ 42%]  (Warmup) 
+Chain 1 Iteration: 1700 / 4000 [ 42%]  (Warmup) 
+Chain 3 Iteration: 1700 / 4000 [ 42%]  (Warmup) 
+Chain 2 Iteration: 1800 / 4000 [ 45%]  (Warmup) 
+Chain 1 Iteration: 1800 / 4000 [ 45%]  (Warmup) 
+Chain 3 Iteration: 1800 / 4000 [ 45%]  (Warmup) 
+Chain 2 Iteration: 1900 / 4000 [ 47%]  (Warmup) 
+Chain 1 Iteration: 1900 / 4000 [ 47%]  (Warmup) 
+Chain 3 Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain 3 Exception: lkj_corr_cholesky_lpdf: Random variable[6] is 0, but must be positive! (in '/tmp/RtmpeOUyLC/model-37f96d1c6663bc.stan', line 120, column 2 to column 29)
+Chain 3 If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain 3 but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain 3 
+Chain 3 Iteration: 1900 / 4000 [ 47%]  (Warmup) 
+Chain 2 Iteration: 2000 / 4000 [ 50%]  (Warmup) 
+Chain 2 Iteration: 2001 / 4000 [ 50%]  (Sampling) 
+Chain 1 Iteration: 2000 / 4000 [ 50%]  (Warmup) 
+Chain 1 Iteration: 2001 / 4000 [ 50%]  (Sampling) 
+Chain 3 Iteration: 2000 / 4000 [ 50%]  (Warmup) 
+Chain 3 Iteration: 2001 / 4000 [ 50%]  (Sampling) 
+Chain 2 Iteration: 2100 / 4000 [ 52%]  (Sampling) 
+Chain 1 Iteration: 2100 / 4000 [ 52%]  (Sampling) 
+Chain 3 Iteration: 2100 / 4000 [ 52%]  (Sampling) 
+Chain 2 Iteration: 2200 / 4000 [ 55%]  (Sampling) 
+Chain 1 Iteration: 2200 / 4000 [ 55%]  (Sampling) 
+Chain 3 Iteration: 2200 / 4000 [ 55%]  (Sampling) 
+Chain 2 Iteration: 2300 / 4000 [ 57%]  (Sampling) 
+Chain 1 Iteration: 2300 / 4000 [ 57%]  (Sampling) 
+Chain 3 Iteration: 2300 / 4000 [ 57%]  (Sampling) 
+Chain 2 Iteration: 2400 / 4000 [ 60%]  (Sampling) 
+Chain 1 Iteration: 2400 / 4000 [ 60%]  (Sampling) 
+Chain 3 Iteration: 2400 / 4000 [ 60%]  (Sampling) 
+Chain 2 Iteration: 2500 / 4000 [ 62%]  (Sampling) 
+Chain 1 Iteration: 2500 / 4000 [ 62%]  (Sampling) 
+Chain 3 Iteration: 2500 / 4000 [ 62%]  (Sampling) 
+Chain 2 Iteration: 2600 / 4000 [ 65%]  (Sampling) 
+Chain 1 Iteration: 2600 / 4000 [ 65%]  (Sampling) 
+Chain 3 Iteration: 2600 / 4000 [ 65%]  (Sampling) 
+Chain 2 Iteration: 2700 / 4000 [ 67%]  (Sampling) 
+Chain 1 Iteration: 2700 / 4000 [ 67%]  (Sampling) 
+Chain 3 Iteration: 2700 / 4000 [ 67%]  (Sampling) 
+Chain 2 Iteration: 2800 / 4000 [ 70%]  (Sampling) 
+Chain 1 Iteration: 2800 / 4000 [ 70%]  (Sampling) 
+Chain 3 Iteration: 2800 / 4000 [ 70%]  (Sampling) 
+Chain 2 Iteration: 2900 / 4000 [ 72%]  (Sampling) 
+Chain 1 Iteration: 2900 / 4000 [ 72%]  (Sampling) 
+Chain 3 Iteration: 2900 / 4000 [ 72%]  (Sampling) 
+Chain 2 Iteration: 3000 / 4000 [ 75%]  (Sampling) 
+Chain 1 Iteration: 3000 / 4000 [ 75%]  (Sampling) 
+Chain 3 Iteration: 3000 / 4000 [ 75%]  (Sampling) 
+Chain 1 Iteration: 3100 / 4000 [ 77%]  (Sampling) 
+Chain 2 Iteration: 3100 / 4000 [ 77%]  (Sampling) 
+Chain 3 Iteration: 3100 / 4000 [ 77%]  (Sampling) 
+Chain 1 Iteration: 3200 / 4000 [ 80%]  (Sampling) 
+Chain 2 Iteration: 3200 / 4000 [ 80%]  (Sampling) 
+Chain 3 Iteration: 3200 / 4000 [ 80%]  (Sampling) 
+Chain 1 Iteration: 3300 / 4000 [ 82%]  (Sampling) 
+Chain 2 Iteration: 3300 / 4000 [ 82%]  (Sampling) 
+Chain 3 Iteration: 3300 / 4000 [ 82%]  (Sampling) 
+Chain 1 Iteration: 3400 / 4000 [ 85%]  (Sampling) 
+Chain 2 Iteration: 3400 / 4000 [ 85%]  (Sampling) 
+Chain 3 Iteration: 3400 / 4000 [ 85%]  (Sampling) 
+Chain 1 Iteration: 3500 / 4000 [ 87%]  (Sampling) 
+Chain 2 Iteration: 3500 / 4000 [ 87%]  (Sampling) 
+Chain 3 Iteration: 3500 / 4000 [ 87%]  (Sampling) 
+Chain 1 Iteration: 3600 / 4000 [ 90%]  (Sampling) 
+Chain 2 Iteration: 3600 / 4000 [ 90%]  (Sampling) 
+Chain 3 Iteration: 3600 / 4000 [ 90%]  (Sampling) 
+Chain 1 Iteration: 3700 / 4000 [ 92%]  (Sampling) 
+Chain 2 Iteration: 3700 / 4000 [ 92%]  (Sampling) 
+Chain 3 Iteration: 3700 / 4000 [ 92%]  (Sampling) 
+Chain 1 Iteration: 3800 / 4000 [ 95%]  (Sampling) 
+Chain 3 Iteration: 3800 / 4000 [ 95%]  (Sampling) 
+Chain 2 Iteration: 3800 / 4000 [ 95%]  (Sampling) 
+Chain 1 Iteration: 3900 / 4000 [ 97%]  (Sampling) 
+Chain 3 Iteration: 3900 / 4000 [ 97%]  (Sampling) 
+Chain 2 Iteration: 3900 / 4000 [ 97%]  (Sampling) 
+Chain 1 Iteration: 4000 / 4000 [100%]  (Sampling) 
+Chain 1 finished in 150.0 seconds.
+Chain 2 Iteration: 4000 / 4000 [100%]  (Sampling) 
+Chain 2 finished in 150.7 seconds.
+Chain 3 Iteration: 4000 / 4000 [100%]  (Sampling) 
+Chain 3 finished in 150.6 seconds.
+Chain 4 Iteration:  100 / 4000 [  2%]  (Warmup) 
+Chain 4 Iteration:  200 / 4000 [  5%]  (Warmup) 
+Chain 4 Iteration:  300 / 4000 [  7%]  (Warmup) 
+Chain 4 Iteration:  400 / 4000 [ 10%]  (Warmup) 
+Chain 4 Iteration:  500 / 4000 [ 12%]  (Warmup) 
+Chain 4 Iteration:  600 / 4000 [ 15%]  (Warmup) 
+Chain 4 Iteration:  700 / 4000 [ 17%]  (Warmup) 
+Chain 4 Iteration:  800 / 4000 [ 20%]  (Warmup) 
+Chain 4 Iteration:  900 / 4000 [ 22%]  (Warmup) 
+Chain 4 Iteration: 1000 / 4000 [ 25%]  (Warmup) 
+Chain 4 Iteration: 1100 / 4000 [ 27%]  (Warmup) 
+Chain 4 Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain 4 Exception: lkj_corr_cholesky_lpdf: Random variable[6] is 0, but must be positive! (in '/tmp/RtmpeOUyLC/model-37f96d1c6663bc.stan', line 120, column 2 to column 29)
+Chain 4 If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain 4 but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain 4 
+Chain 4 Iteration: 1200 / 4000 [ 30%]  (Warmup) 
+Chain 4 Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain 4 Exception: lkj_corr_cholesky_lpdf: Random variable[6] is 0, but must be positive! (in '/tmp/RtmpeOUyLC/model-37f96d1c6663bc.stan', line 120, column 2 to column 29)
+Chain 4 If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain 4 but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain 4 
+Chain 4 Iteration: 1300 / 4000 [ 32%]  (Warmup) 
+Chain 4 Iteration: 1400 / 4000 [ 35%]  (Warmup) 
+Chain 4 Iteration: 1500 / 4000 [ 37%]  (Warmup) 
+Chain 4 Iteration: 1600 / 4000 [ 40%]  (Warmup) 
+Chain 4 Iteration: 1700 / 4000 [ 42%]  (Warmup) 
+Chain 4 Iteration: 1800 / 4000 [ 45%]  (Warmup) 
+Chain 4 Iteration: 1900 / 4000 [ 47%]  (Warmup) 
+Chain 4 Iteration: 2000 / 4000 [ 50%]  (Warmup) 
+Chain 4 Iteration: 2001 / 4000 [ 50%]  (Sampling) 
+Chain 4 Iteration: 2100 / 4000 [ 52%]  (Sampling) 
+Chain 4 Iteration: 2200 / 4000 [ 55%]  (Sampling) 
+Chain 4 Iteration: 2300 / 4000 [ 57%]  (Sampling) 
+Chain 4 Iteration: 2400 / 4000 [ 60%]  (Sampling) 
+Chain 4 Iteration: 2500 / 4000 [ 62%]  (Sampling) 
+Chain 4 Iteration: 2600 / 4000 [ 65%]  (Sampling) 
+Chain 4 Iteration: 2700 / 4000 [ 67%]  (Sampling) 
+Chain 4 Iteration: 2800 / 4000 [ 70%]  (Sampling) 
+Chain 4 Iteration: 2900 / 4000 [ 72%]  (Sampling) 
+Chain 4 Iteration: 3000 / 4000 [ 75%]  (Sampling) 
+Chain 4 Iteration: 3100 / 4000 [ 77%]  (Sampling) 
+Chain 4 Iteration: 3200 / 4000 [ 80%]  (Sampling) 
+Chain 4 Iteration: 3300 / 4000 [ 82%]  (Sampling) 
+Chain 4 Iteration: 3400 / 4000 [ 85%]  (Sampling) 
+Chain 4 Iteration: 3500 / 4000 [ 87%]  (Sampling) 
+Chain 4 Iteration: 3600 / 4000 [ 90%]  (Sampling) 
+Chain 4 Iteration: 3700 / 4000 [ 92%]  (Sampling) 
+Chain 4 Iteration: 3800 / 4000 [ 95%]  (Sampling) 
+Chain 4 Iteration: 3900 / 4000 [ 97%]  (Sampling) 
+Chain 4 Iteration: 4000 / 4000 [100%]  (Sampling) 
+Chain 4 finished in 196.1 seconds.
+
+All 4 chains finished successfully.
+Mean chain execution time: 161.9 seconds.
+Total execution time: 197.1 seconds.
+
+[1] 2
+[1] "done finding parameter values"
+/home/jespere/Hierarchical-Interoception/Power analysis/Python scripts/PSI.py:58: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  df = pd.concat([df, df1])
+sys:1: FutureWarning: Index.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+Running MCMC with 4 parallel chains...
+
+Chain 1 Iteration:    1 / 4000 [  0%]  (Warmup) 
+Chain 1 Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain 1 Exception: lkj_corr_cholesky_lpdf: Random variable[2] is 0, but must be positive! (in '/tmp/RtmpeOUyLC/model-37f96d1c6663bc.stan', line 120, column 2 to column 29)
+Chain 1 If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain 1 but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain 1 
+Chain 2 Iteration:    1 / 4000 [  0%]  (Warmup) 
+Chain 2 Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain 2 Exception: lkj_corr_cholesky_lpdf: Random variable[3] is 0, but must be positive! (in '/tmp/RtmpeOUyLC/model-37f96d1c6663bc.stan', line 120, column 2 to column 29)
+Chain 2 If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain 2 but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain 2 
+Chain 2 Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain 2 Exception: lkj_corr_cholesky_lpdf: Random variable[3] is 0, but must be positive! (in '/tmp/RtmpeOUyLC/model-37f96d1c6663bc.stan', line 120, column 2 to column 29)
+Chain 2 If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain 2 but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain 2 
+Chain 2 Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain 2 Exception: lkj_corr_cholesky_lpdf: Random variable[6] is 0, but must be positive! (in '/tmp/RtmpeOUyLC/model-37f96d1c6663bc.stan', line 120, column 2 to column 29)
+Chain 2 If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain 2 but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain 2 
+Chain 2 Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain 2 Exception: Within_subjectx32design_model_namespace::log_prob: betas[1] is -nan, but must be greater than or equal to 0.000000 (in '/tmp/RtmpeOUyLC/model-37f96d1c6663bc.stan', line 53, column 2 to column 29)
+Chain 2 If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain 2 but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain 2 
+Chain 2 Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain 2 Exception: lkj_corr_cholesky_lpdf: Random variable[3] is 0, but must be positive! (in '/tmp/RtmpeOUyLC/model-37f96d1c6663bc.stan', line 120, column 2 to column 29)
+Chain 2 If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain 2 but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain 2 
+Chain 3 Iteration:    1 / 4000 [  0%]  (Warmup) 
+Chain 3 Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain 3 Exception: lkj_corr_cholesky_lpdf: Random variable[2] is 0, but must be positive! (in '/tmp/RtmpeOUyLC/model-37f96d1c6663bc.stan', line 120, column 2 to column 29)
+Chain 3 If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain 3 but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain 3 
+Chain 3 Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain 3 Exception: lkj_corr_cholesky_lpdf: Random variable[2] is 0, but must be positive! (in '/tmp/RtmpeOUyLC/model-37f96d1c6663bc.stan', line 120, column 2 to column 29)
+Chain 3 If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain 3 but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain 3 
+Chain 3 Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain 3 Exception: lkj_corr_cholesky_lpdf: Random variable[2] is 0, but must be positive! (in '/tmp/RtmpeOUyLC/model-37f96d1c6663bc.stan', line 120, column 2 to column 29)
+Chain 3 If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain 3 but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain 3 
+Chain 4 Iteration:    1 / 4000 [  0%]  (Warmup) 
+Chain 4 Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain 4 Exception: lkj_corr_cholesky_lpdf: Random variable[5] is 0, but must be positive! (in '/tmp/RtmpeOUyLC/model-37f96d1c6663bc.stan', line 120, column 2 to column 29)
+Chain 4 If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain 4 but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain 4 
+Chain 4 Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain 4 Exception: lkj_corr_cholesky_lpdf: Random variable[5] is 0, but must be positive! (in '/tmp/RtmpeOUyLC/model-37f96d1c6663bc.stan', line 120, column 2 to column 29)
+Chain 4 If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain 4 but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain 4 
+Chain 4 Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain 4 Exception: lkj_corr_cholesky_lpdf: Random variable[2] is 0, but must be positive! (in '/tmp/RtmpeOUyLC/model-37f96d1c6663bc.stan', line 120, column 2 to column 29)
+Chain 4 If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain 4 but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain 4 
+Chain 2 Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain 2 Exception: lkj_corr_cholesky_lpdf: Random variable[5] is 0, but must be positive! (in '/tmp/RtmpeOUyLC/model-37f96d1c6663bc.stan', line 120, column 2 to column 29)
+Chain 2 If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain 2 but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain 2 
+Chain 3 Iteration:  100 / 4000 [  2%]  (Warmup) 
+Chain 2 Iteration:  100 / 4000 [  2%]  (Warmup) 
+Chain 3 Iteration:  200 / 4000 [  5%]  (Warmup) 
+Chain 2 Iteration:  200 / 4000 [  5%]  (Warmup) 
+Chain 2 Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Chain 2 Exception: lkj_corr_cholesky_lpdf: Random variable[5] is 0, but must be positive! (in '/tmp/RtmpeOUyLC/model-37f96d1c6663bc.stan', line 120, column 2 to column 29)
+Chain 2 If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+Chain 2 but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+Chain 2 
+Chain 3 Iteration:  300 / 4000 [  7%]  (Warmup) 
+Chain 3 Iteration:  400 / 4000 [ 10%]  (Warmup) 
+Chain 3 Iteration:  500 / 4000 [ 12%]  (Warmup) 
+Chain 3 Iteration:  600 / 4000 [ 15%]  (Warmup) 
+Chain 3 Iteration:  700 / 4000 [ 17%]  (Warmup) 
+Chain 1 Iteration:  100 / 4000 [  2%]  (Warmup) 
+Chain 1 Iteration:  200 / 4000 [  5%]  (Warmup) 
+Chain 1 Iteration:  300 / 4000 [  7%]  (Warmup) 
+Chain 2 Iteration:  300 / 4000 [  7%]  (Warmup) 
+Chain 2 Iteration:  400 / 4000 [ 10%]  (Warmup) 
+Chain 2 Iteration:  500 / 4000 [ 12%]  (Warmup) 
+Chain 2 Iteration:  600 / 4000 [ 15%]  (Warmup) 
+Chain 2 Iteration:  700 / 4000 [ 17%]  (Warmup) 
+Chain 3 Iteration:  800 / 4000 [ 20%]  (Warmup) 
+Chain 2 Iteration:  800 / 4000 [ 20%]  (Warmup) 
+Chain 4 Iteration:  100 / 4000 [  2%]  (Warmup) 
+Chain 1 Iteration:  400 / 4000 [ 10%]  (Warmup) 
+Chain 2 Iteration:  900 / 4000 [ 22%]  (Warmup) 
+Chain 3 Iteration:  900 / 4000 [ 22%]  (Warmup) 
+Chain 3 Iteration: 1000 / 4000 [ 25%]  (Warmup) 
+Chain 2 Iteration: 1000 / 4000 [ 25%]  (Warmup) 
+Chain 4 Iteration:  200 / 4000 [  5%]  (Warmup) 
+Chain 1 Iteration:  500 / 4000 [ 12%]  (Warmup) 
+Chain 3 Iteration: 1100 / 4000 [ 27%]  (Warmup) 
+Chain 2 Iteration: 1100 / 4000 [ 27%]  (Warmup) 
+Chain 1 Iteration:  600 / 4000 [ 15%]  (Warmup) 
+Chain 4 Iteration:  300 / 4000 [  7%]  (Warmup) 
+Chain 3 Iteration: 1200 / 4000 [ 30%]  (Warmup) 
+Chain 1 Iteration:  700 / 4000 [ 17%]  (Warmup) 
+Chain 2 Iteration: 1200 / 4000 [ 30%]  (Warmup) 
+Chain 4 Iteration:  400 / 4000 [ 10%]  (Warmup) 
+Chain 3 Iteration: 1300 / 4000 [ 32%]  (Warmup) 
+Chain 1 Iteration:  800 / 4000 [ 20%]  (Warmup) 
+Chain 2 Iteration: 1300 / 4000 [ 32%]  (Warmup) 
+Chain 3 Iteration: 1400 / 4000 [ 35%]  (Warmup) 
+Chain 4 Iteration:  500 / 4000 [ 12%]  (Warmup) 
+Chain 2 Iteration: 1400 / 4000 [ 35%]  (Warmup) 
+Chain 1 Iteration:  900 / 4000 [ 22%]  (Warmup) 
+Chain 3 Iteration: 1500 / 4000 [ 37%]  (Warmup) 
+Chain 4 Iteration:  600 / 4000 [ 15%]  (Warmup) 
+Chain 2 Iteration: 1500 / 4000 [ 37%]  (Warmup) 
+Chain 1 Iteration: 1000 / 4000 [ 25%]  (Warmup) 
+Chain 3 Iteration: 1600 / 4000 [ 40%]  (Warmup) 
+Chain 4 Iteration:  700 / 4000 [ 17%]  (Warmup) 
+Chain 2 Iteration: 1600 / 4000 [ 40%]  (Warmup) 
+Chain 3 Iteration: 1700 / 4000 [ 42%]  (Warmup) 
+Chain 1 Iteration: 1100 / 4000 [ 27%]  (Warmup) 
+Chain 4 Iteration:  800 / 4000 [ 20%]  (Warmup) 
+Chain 2 Iteration: 1700 / 4000 [ 42%]  (Warmup) 
+Chain 3 Iteration: 1800 / 4000 [ 45%]  (Warmup) 
+Chain 1 Iteration: 1200 / 4000 [ 30%]  (Warmup) 
+Chain 2 Iteration: 1800 / 4000 [ 45%]  (Warmup) 
+Chain 4 Iteration:  900 / 4000 [ 22%]  (Warmup) 
+Chain 3 Iteration: 1900 / 4000 [ 47%]  (Warmup) 
+Chain 1 Iteration: 1300 / 4000 [ 32%]  (Warmup) 
+Chain 2 Iteration: 1900 / 4000 [ 47%]  (Warmup) 
+Chain 4 Iteration: 1000 / 4000 [ 25%]  (Warmup) 
+Chain 3 Iteration: 2000 / 4000 [ 50%]  (Warmup) 
+Chain 3 Iteration: 2001 / 4000 [ 50%]  (Sampling) 
+Chain 1 Iteration: 1400 / 4000 [ 35%]  (Warmup) 
+Chain 2 Iteration: 2000 / 4000 [ 50%]  (Warmup) 
+Chain 2 Iteration: 2001 / 4000 [ 50%]  (Sampling) 
+Chain 4 Iteration: 1100 / 4000 [ 27%]  (Warmup) 
+Chain 1 Iteration: 1500 / 4000 [ 37%]  (Warmup) 
+Chain 3 Iteration: 2100 / 4000 [ 52%]  (Sampling) 
+Chain 4 Iteration: 1200 / 4000 [ 30%]  (Warmup) 
+Chain 2 Iteration: 2100 / 4000 [ 52%]  (Sampling) 
+Chain 1 Iteration: 1600 / 4000 [ 40%]  (Warmup) 
+Chain 3 Iteration: 2200 / 4000 [ 55%]  (Sampling) 
+Chain 4 Iteration: 1300 / 4000 [ 32%]  (Warmup) 
+Chain 1 Iteration: 1700 / 4000 [ 42%]  (Warmup) 
+Chain 2 Iteration: 2200 / 4000 [ 55%]  (Sampling) 
+Chain 4 Iteration: 1400 / 4000 [ 35%]  (Warmup) 
+Chain 1 Iteration: 1800 / 4000 [ 45%]  (Warmup) 
+Chain 4 Iteration: 1500 / 4000 [ 37%]  (Warmup) 
+Chain 3 Iteration: 2300 / 4000 [ 57%]  (Sampling) 
+Chain 1 Iteration: 1900 / 4000 [ 47%]  (Warmup) 
+Chain 4 Iteration: 1600 / 4000 [ 40%]  (Warmup) 
+Chain 4 Iteration: 1700 / 4000 [ 42%]  (Warmup) 
+Chain 4 Iteration: 1800 / 4000 [ 45%]  (Warmup) 
+Chain 4 Iteration: 1900 / 4000 [ 47%]  (Warmup) 
+Chain 4 Iteration: 2000 / 4000 [ 50%]  (Warmup) 
+Chain 4 Iteration: 2001 / 4000 [ 50%]  (Sampling) 
+Chain 4 Iteration: 2100 / 4000 [ 52%]  (Sampling) 
+Chain 4 Iteration: 2200 / 4000 [ 55%]  (Sampling) 
+Chain 4 Iteration: 2300 / 4000 [ 57%]  (Sampling) 
+Chain 4 Iteration: 2400 / 4000 [ 60%]  (Sampling) 
+Chain 4 Iteration: 2500 / 4000 [ 62%]  (Sampling) 
+Chain 4 Iteration: 2600 / 4000 [ 65%]  (Sampling) 
+Chain 4 Iteration: 2700 / 4000 [ 67%]  (Sampling) 
+Chain 4 Iteration: 2800 / 4000 [ 70%]  (Sampling) 
+Chain 4 Iteration: 2900 / 4000 [ 72%]  (Sampling) 
+Chain 4 Iteration: 3000 / 4000 [ 75%]  (Sampling) 
+Chain 1 Iteration: 2000 / 4000 [ 50%]  (Warmup) 
+Chain 1 Iteration: 2001 / 4000 [ 50%]  (Sampling) 
+Chain 2 Iteration: 2300 / 4000 [ 57%]  (Sampling) 
+Chain 4 Iteration: 3100 / 4000 [ 77%]  (Sampling) 
+Chain 3 Iteration: 2400 / 4000 [ 60%]  (Sampling) 
+Chain 1 Iteration: 2100 / 4000 [ 52%]  (Sampling) 
+Chain 2 Iteration: 2400 / 4000 [ 60%]  (Sampling) 
+Chain 4 Iteration: 3200 / 4000 [ 80%]  (Sampling) 
+Chain 3 Iteration: 2500 / 4000 [ 62%]  (Sampling) 
+Chain 1 Iteration: 2200 / 4000 [ 55%]  (Sampling) 
+Chain 2 Iteration: 2500 / 4000 [ 62%]  (Sampling) 
+Chain 4 Iteration: 3300 / 4000 [ 82%]  (Sampling) 
+Chain 3 Iteration: 2600 / 4000 [ 65%]  (Sampling) 
+Chain 1 Iteration: 2300 / 4000 [ 57%]  (Sampling) 
+Chain 2 Iteration: 2600 / 4000 [ 65%]  (Sampling) 
+Chain 4 Iteration: 3400 / 4000 [ 85%]  (Sampling) 
+Chain 3 Iteration: 2700 / 4000 [ 67%]  (Sampling) 
+Chain 1 Iteration: 2400 / 4000 [ 60%]  (Sampling) 
+Chain 2 Iteration: 2700 / 4000 [ 67%]  (Sampling) 
+Chain 4 Iteration: 3500 / 4000 [ 87%]  (Sampling) 
+Chain 3 Iteration: 2800 / 4000 [ 70%]  (Sampling) 
+Chain 1 Iteration: 2500 / 4000 [ 62%]  (Sampling) 
+Chain 2 Iteration: 2800 / 4000 [ 70%]  (Sampling) 
+Chain 4 Iteration: 3600 / 4000 [ 90%]  (Sampling) 
+Chain 3 Iteration: 2900 / 4000 [ 72%]  (Sampling) 
+Chain 1 Iteration: 2600 / 4000 [ 65%]  (Sampling) 
+Chain 2 Iteration: 2900 / 4000 [ 72%]  (Sampling) 
+Chain 4 Iteration: 3700 / 4000 [ 92%]  (Sampling) 
+Chain 3 Iteration: 3000 / 4000 [ 75%]  (Sampling) 
+Chain 1 Iteration: 2700 / 4000 [ 67%]  (Sampling) 
+Chain 2 Iteration: 3000 / 4000 [ 75%]  (Sampling) 
+Chain 4 Iteration: 3800 / 4000 [ 95%]  (Sampling) 
+Chain 3 Iteration: 3100 / 4000 [ 77%]  (Sampling) 
+Chain 1 Iteration: 2800 / 4000 [ 70%]  (Sampling) 
+Chain 2 Iteration: 3100 / 4000 [ 77%]  (Sampling) 
+Chain 4 Iteration: 3900 / 4000 [ 97%]  (Sampling) 
+Chain 3 Iteration: 3200 / 4000 [ 80%]  (Sampling) 
+Chain 2 Iteration: 3200 / 4000 [ 80%]  (Sampling) 
+Chain 1 Iteration: 2900 / 4000 [ 72%]  (Sampling) 
+Chain 4 Iteration: 4000 / 4000 [100%]  (Sampling) 
+Chain 4 finished in 142.4 seconds.
+Chain 3 Iteration: 3300 / 4000 [ 82%]  (Sampling) 
+Chain 2 Iteration: 3300 / 4000 [ 82%]  (Sampling) 
+Chain 1 Iteration: 3000 / 4000 [ 75%]  (Sampling) 
+Chain 3 Iteration: 3400 / 4000 [ 85%]  (Sampling) 
+Chain 2 Iteration: 3400 / 4000 [ 85%]  (Sampling) 
+Chain 1 Iteration: 3100 / 4000 [ 77%]  (Sampling) 
+Chain 3 Iteration: 3500 / 4000 [ 87%]  (Sampling) 
+Chain 2 Iteration: 3500 / 4000 [ 87%]  (Sampling) 
+Chain 1 Iteration: 3200 / 4000 [ 80%]  (Sampling) 
+Chain 3 Iteration: 3600 / 4000 [ 90%]  (Sampling) 
+Chain 2 Iteration: 3600 / 4000 [ 90%]  (Sampling) 
+Chain 1 Iteration: 3300 / 4000 [ 82%]  (Sampling) 
+Chain 3 Iteration: 3700 / 4000 [ 92%]  (Sampling) 
+Chain 1 Iteration: 3400 / 4000 [ 85%]  (Sampling) 
+Chain 2 Iteration: 3700 / 4000 [ 92%]  (Sampling) 
+Chain 3 Iteration: 3800 / 4000 [ 95%]  (Sampling) 
+Chain 1 Iteration: 3500 / 4000 [ 87%]  (Sampling) 
+Chain 2 Iteration: 3800 / 4000 [ 95%]  (Sampling) 
+Chain 3 Iteration: 3900 / 4000 [ 97%]  (Sampling) 
+Chain 2 Iteration: 3900 / 4000 [ 97%]  (Sampling) 
+Chain 1 Iteration: 3600 / 4000 [ 90%]  (Sampling) 
+Chain 3 Iteration: 4000 / 4000 [100%]  (Sampling) 
+Chain 3 finished in 164.1 seconds.
+Chain 2 Iteration: 4000 / 4000 [100%]  (Sampling) 
+Chain 2 finished in 164.5 seconds.
+Chain 1 Iteration: 3700 / 4000 [ 92%]  (Sampling) 
+Chain 1 Iteration: 3800 / 4000 [ 95%]  (Sampling) 
+Chain 1 Iteration: 3900 / 4000 [ 97%]  (Sampling) 
+Chain 1 Iteration: 4000 / 4000 [100%]  (Sampling) 
+Chain 1 finished in 165.7 seconds.
+
+All 4 chains finished successfully.
+Mean chain execution time: 159.2 seconds.
+Total execution time: 178.9 seconds.
+
+Warning messages:
+1: In py_to_r.pandas.core.frame.DataFrame(d) :
+  index contains duplicated values: row names not set
+2: In py_to_r.pandas.core.frame.DataFrame(d) :
+  index contains duplicated values: row names not set

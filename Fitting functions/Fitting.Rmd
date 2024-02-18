@@ -1,0 +1,54 @@
+---
+title: "Fitting"
+output: html_document
+date: "`r Sys.Date()`"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+pacman::p_load(cmdstanr, tidyverse,posterior, bayesplot, tidybayes, furrr,reticulate, stringr, patchwork)
+
+```
+
+
+```{r}
+#testing new 
+
+mod = cmdstanr::cmdstan_model(here::here("Fitting functions","Stan models","Parameterized cummulative normal.stan"))
+
+
+data = read.csv(list.files(here::here("Power analysis","Data sets", "Beta","effect_size_beta = 0 trials = 10 subjects = 5"), full.names = TRUE)[1])
+
+data = data %>% mutate(session = ifelse(sessions == 1, 0 ,1))
+
+datastan = list(T = nrow(data),
+                 S = length(unique(data$participant_id)),
+                 S_id = as.numeric(data$participant_id ),
+                 X = data %>% .$X,
+                 X_lapse = matrix(rep(1,nrow(data)),nrow = 1),
+                 X_alpha = as.matrix(t(data.frame(int = rep(1,nrow(data)),
+                                                 session = data %>% .$session))),
+                 X_beta = as.matrix(t(data.frame(int = rep(1,nrow(data)),
+                                                 session = data %>% .$session))),
+                 N_alpha = 2,
+                 N_beta = 2,
+                 N_lapse = 1,
+                 Y = data %>% .$resp
+)
+
+
+#fitting
+fit_test <- mod$sample(
+  data = datastan,
+  iter_sampling = 1000,
+  iter_warmup = 1000,
+  chains = 4,
+  parallel_chains = 4,
+  refresh = 100,
+  adapt_delta = 0.8,
+  max_treedepth = 12
+)
+
+```
+

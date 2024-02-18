@@ -1,0 +1,171 @@
+---
+title: "Visualization"
+output: html_document
+date: "2024-01-24"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+pacman::p_load(cmdstanr, tidyverse,posterior, bayesplot, tidybayes, furrr, stringr)
+
+```
+
+## R Markdown
+
+```{r}
+source(here::here("Power analysis","R scripts","Visualization functions.R"))
+
+df_alpha = get_full_df("alpha")
+
+df_alpha %>% filter(variable == "mu_g[4]") %>% mutate(signifi = ifelse(q5>0,1,0)) %>% 
+  ggplot(aes(x = effectsize, y = mean, col = as.factor(signifi)))+
+  geom_pointrange(aes(ymin = q5, ymax = q95), size = 0.5)+
+  theme_classic()+
+  geom_hline(yintercept = 0, linetype = 2)+facet_grid(trials~subjects, labeller = label_both)
+
+#correlation (not to interresting atm)
+
+data.frame(betaesti = df_alpha %>% filter(variable == "mu_g[5]") %>% .$mean,
+           q5alpha = df_alpha %>% filter(variable == "mu_g[4]") %>% .$q5,
+           effectsize = df_alpha %>% filter(variable == "mu_g[5]") %>% .$effectsize) %>%
+  ggplot(aes(x = betaesti, y = q5alpha))+geom_point()+
+  geom_smooth(method = "lm")+facet_wrap(~effectsize)
+
+
+data.frame(betaesti = df_alpha %>% filter(variable == "mu_g[5]") %>% .$mean,
+           effectsize_beta = df_alpha %>% filter(variable == "mu_g[5]") %>% .$effectsize_beta,
+           q5alpha = df_alpha %>% filter(variable == "mu_g[4]") %>% .$q5,
+           effectsize = df_alpha %>% filter(variable == "mu_g[5]") %>% .$effectsize) %>%
+  ggplot(aes(x = effectsize_beta, y = q5alpha))+geom_point()+
+  geom_smooth(method = "lm")+facet_wrap(~effectsize)
+
+hist(df_alpha$effectsize_beta)
+
+# Beta  visualization for alpha
+qq = df_alpha %>% filter(variable == "mu_g[4]")%>% mutate(signifi = ifelse(q5>0,1,0)) %>% 
+  group_by(effectsize,subjects, trials) %>% 
+  summarize(hits = sum(signifi), misses = n()-sum(signifi)) %>% 
+  rowwise() %>% 
+  mutate(betas = list(rbeta(10000, 1+hits, 1+misses)))
+  
+qq %>% group_by(effectsize,subjects, trials) %>% summarize(betas = unlist(betas)) %>% summarize(median = median(betas), q5 = hdi(betas)[1], q95 = hdi(betas)[2]) %>% 
+  mutate(trials = as.factor(trials), subjects = as.factor(subjects)) %>% 
+  ggplot(aes(x = effectsize, y = median, col = trials)) + 
+  geom_pointrange(aes(ymin = q5, ymax = q95), width = 0.2,  position=position_dodge(width=0.1)) +
+  facet_grid(~subjects, labeller = label_both)+
+  theme_classic()+ geom_smooth(method = "glm", 
+    method.args = list(family = "binomial"), 
+    se = FALSE)+
+  ylab("Power")
+
+qq %>% group_by(effectsize,subjects, trials) %>% summarize(betas = unlist(betas)) %>% summarize(median = median(betas), q5 = hdi(betas)[1], q95 = hdi(betas)[2]) %>% 
+  mutate(trials = as.factor(trials), subjects = as.factor(subjects)) %>% 
+  ggplot(aes(x = effectsize, y = median, col = subjects)) + 
+  geom_pointrange(aes(ymin = q5, ymax = q95), width = 0.2,  position=position_dodge(width=0.1)) +
+  facet_grid(~trials, labeller = label_both)+
+  theme_classic()+ geom_smooth(method = "glm", 
+    method.args = list(family = "binomial"), 
+    se = FALSE)+
+  ylab("Power")
+
+
+library(scales)
+
+#display ggplot2 default hex color codes from 1 to 8
+
+length(unique(qq$subjects))*length(unique(qq$trials))
+
+intervals = qq %>% group_by(trials,subjects) %>% summarize(n()) %>% group_by(subjects) %>% summarize(n = n()) %>% .$n
+
+
+colors = hue_pal()(50)
+i = 10
+
+
+qq %>% group_by(effectsize,subjects, trials) %>% summarize(betas = unlist(betas)) %>% summarize(median = median(betas), q5 = hdi(betas)[1], q95 = hdi(betas)[2]) %>% 
+  mutate(trials = as.factor(trials), subjects = as.factor(subjects)) %>% 
+  ggplot(aes(x = effectsize, y = median, col = interaction(trials,subjects))) + 
+  geom_pointrange(aes(ymin = q5, ymax = q95), width = 0.2,  position=position_dodge(width=0.1)) +
+  theme_classic()+ geom_smooth(method = "glm", 
+    method.args = list(family = "binomial"), 
+    se = FALSE)+
+  ylab("Power")+
+  scale_color_manual(values = colors[c(1:intervals[1],(1:intervals[2])+i,(1:intervals[3])+i*2,(1:intervals[4])+i*3,(1:intervals[5])+i*4,(1:intervals[6])+i*4)])
+
+```
+
+```{r}
+
+df_beta = get_full_df("beta")
+
+# betas
+df_beta %>% filter(variable == "mu_g[5]") %>% mutate(signifi = ifelse(q5>0,1,0)) %>% 
+  ggplot(aes(x = effectsize, y = mean, col = as.factor(signifi)))+
+  geom_pointrange(aes(ymin = q5, ymax = q95),position = position_dodge2(width = 0.1), size = 0.5)+
+  theme_classic()+
+  geom_hline(yintercept = 0, linetype = 2)+facet_grid(trials~subjects)
+
+
+
+# Beta  visualization for beta
+qq = df_beta %>% filter(variable == "mu_g[5]")%>% mutate(signifi = ifelse(q5>0,1,0)) %>% 
+  group_by(effectsize,subjects, trials) %>% 
+  summarize(hits = sum(signifi), misses = n()-sum(signifi)) %>% 
+  rowwise() %>% 
+  mutate(betas = list(rbeta(10000, 1+hits, 1+misses)))
+
+
+
+qq %>% group_by(effectsize,subjects, trials) %>% summarize(betas = unlist(betas)) %>% summarize(median = median(betas), q5 = hdi(betas)[1], q95 = hdi(betas)[2]) %>% 
+  mutate(trials = as.factor(trials), subjects = as.factor(subjects)) %>% 
+  ggplot(aes(x = effectsize, y = median, col = trials)) + 
+  geom_pointrange(aes(ymin = q5, ymax = q95), width = 0.2,  position=position_dodge(width=0.1)) +
+  facet_grid(~subjects, labeller = label_both)+
+  theme_classic()+ geom_smooth(method = "glm", 
+    method.args = list(family = "binomial"), 
+    se = FALSE)+
+  ylab("Power")
+
+
+intervals = qq %>% group_by(trials,subjects) %>% summarize(n()) %>% group_by(subjects) %>% summarize(n = n()) %>% .$n
+
+colors = hue_pal()(50)
+i = 10
+
+
+qq %>% group_by(effectsize,subjects, trials) %>% summarize(betas = unlist(betas)) %>% summarize(median = median(betas), q5 = hdi(betas)[1], q95 = hdi(betas)[2]) %>% 
+  mutate(trials = as.factor(trials), subjects = as.factor(subjects)) %>% 
+  ggplot(aes(x = effectsize, y = median, col = interaction(as.factor(trials), as.factor(subjects)))) + 
+  geom_pointrange(aes(ymin = q5, ymax = q95), width = 0.2,  position=position_dodge(width=0.1)) +
+  theme_classic()+ geom_smooth(method = "glm", 
+    method.args = list(family = "binomial"), 
+    se = FALSE) +ylab("Power")+scale_color_manual(values = colors[c(1:intervals[1],(1:intervals[2])+i,(1:intervals[3])+i*2,(1:intervals[4])+i*3,(1:intervals[5])+i*4,(1:intervals[6])+i*5)])
+
+
+
+```
+
+
+```{r}
+c10 = fit_results(df_alpha,"alpha",10,0.05, 0.8)
+c50 = fit_results(df_alpha,"alpha",50,0.05, 0.8)
+c100 = fit_results(df_alpha,"alpha",100,0.05, 0.8)
+
+library(patchwork)
+c10[[1]]
+c50[[1]]
+c100[[1]]
+c50[[2]]
+```
+
+```{r}
+c10_beta = fit_results(df_beta,"beta",50,0.05, 0.8)
+c50_beta = fit_results(df_beta,"beta",50,0.05, 0.8)
+c100_beta = fit_results(df_beta,"beta",100,0.05, 0.8)
+
+
+library(patchwork)
+c50_beta[[1]]/c100_beta[[1]]
+c50_beta[[2]]
+
+```
